@@ -4,11 +4,7 @@ import pandas as pd
 import jaydebeapi
 from datetime import datetime
 
-connect = jaydebeapi.connect(
-  'oracle.jdbc.driver.OracleDriver',
-  'jdbc:oracle:thin:de3hd/bilbobaggins@de-etl.chronosavant.ru:1521/deoracle',
-  ['de3hd','bilbobaggins'],
-  'ojdbc7.jar')
+
 
 cursor = connect.cursor()
 
